@@ -47,6 +47,7 @@ p {
   border-radius: 30px;
   background-color: var(--white);
   gap: 20px;
+  box-shadow: 5px 5px 50px rgba(46, 43, 233, 0.1);
 }
 
 .result {
@@ -240,4 +241,79 @@ h1 {
   cursor: pointer;
   width: 250px;
   margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 16px;
+  }
+
+  body {
+    height: auto;
+    padding: 20px;
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .result {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 0 0 30px 30px;
+  }
+
+  .summary {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+
+  button {
+    font-size: 1rem;
+    margin: 2rem 0;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .result-value {
+    font-size: 3rem;
+  }
+
+  .description {
+    margin: 10px 20px;
+    font-size: 14px;
+  }
+
+  .summary h2 {
+    font-size: 1.2rem;
+    margin-left: 15px;
+  }
+
+  .reaction,
+  .memory,
+  .verbal,
+  .visual {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
 }
